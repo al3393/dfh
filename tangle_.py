@@ -1335,14 +1335,7 @@ class StrandAlgebra(DGAlgebra): #The `parent` of  Strand Algebra
         c_l = gen1.strands.strandCrossing_coord(not self.is_left)
         c_r = gen2.strands.strandCrossing_coord(not self.is_left)   
         l_tangle = [gen1.tangle.orient_right_lhalf, gen1.tangle.orient_left_lhalf]
-        r_tangle = [gen2.tangle.orient_right_rhalf, gen2.tangle.orient_left_rhalf]  
-#        print("Entering : Mod 6") #cb and remove
-#        print("\nl_strands: {0}".format(l_strands))
-#        print("\nr_strands: {0}".format(r_strands))
-#        print("\nc_l: {0}".format(c_l))
-#        print("\nc_r: {0}".format(c_r))
-#        print("\nl_tangle {0}".format(l_tangle))
-#        print("\nr_tangle {0}".format(r_tangle))        
+        r_tangle = [gen2.tangle.orient_right_rhalf, gen2.tangle.orient_left_rhalf]       
         return len(self.mult_two_halfs(l_tangle, l_strands, r_tangle, r_strands)) > 0 \
                 or len(self.cross_twice(l_strands, r_strands, c_l, c_r)) > 0 
 

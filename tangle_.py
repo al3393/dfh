@@ -20,11 +20,9 @@ class TANGLE:
         '''Creates a tangle from a dictionary object (`pairs`)of matched pairs.'''
     # `pairs` is a dictionary object which contains each orange tangle
     #in `pairs`; orientation is `key` to `value`
-    # each orange line may run from i(b_left) to i+0.5 OR from i+0.5 to i+1(b_right)
     
     # Note: 
     # if a the tangle is at the boundary, then we will have a dummy pair 
-    # with x coordinates either -1 or 300 that will eventually be removed
     # if only_right_half = =True i.e leftmost cup, then l_pairs = {}
     # if only_right_half == True i.e leftmost cup, then r_pairs = {}
                
@@ -97,7 +95,8 @@ class TANGLE:
     def add_cups_caps(self):
         ''' This method adds the cups and caps by splitting the index
         for example, if a cap is (1,5):(1,4) then it adds to 
-        l_pairs_wc (1,5):(1.5,4.5) and (1.5,4.5):(1,5).'''          
+        l_pairs_wc (1,5):(1.5,4.5) and (1.5,4.5):(1,5).'''  
+      
         # remove caps or cups
         self.remove_cups_caps()        
         #add caps or cups again --------------------------------

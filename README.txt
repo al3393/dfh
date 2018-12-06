@@ -1,6 +1,6 @@
 Computations in Tangle Floer Homology 
 
-(Work almost done but not finished: work implementing tensor product remains)
+(work almost done but not finished: work implementing tensor product remains)
 
 Copyright (C) 2018  Ayeong (Amy) Lee 
 This program is free software; you can redistribute it and/or modify it underthe terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later
